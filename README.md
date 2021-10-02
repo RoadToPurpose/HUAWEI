@@ -77,7 +77,7 @@ The program displays the following messages:
 - File name with the result of the sequential algorithm
 - Time of matrix multiplication in milliseconds for a parallel algorithm
 - The name of the file with the result of the parallel algorithm
-- The result of comparing the results of the algorithms
+- The result of comparing the results of the algorithms  
 If the "random" mode is selected, the program displays messages about where the generated matrices are stored.  
 If an error occurs, the program displays the error text.  
 
