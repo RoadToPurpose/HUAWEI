@@ -21,17 +21,18 @@
             the sixth argument is the number of decimal places when displaying matrices
 
     File format:
-        the first row is the number of rows of the matrix
-        the second row is the number of cols of the matrix
-        Next, there are rows_count rows (each with cols_count elements), which contain the elements of the matrix
-        
-        Example:
-        A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respectively:
-        3
-        2
-        1 2
-        3 4
-        5 6
+        The program uses the following format for input and output files:
+            the first row is the number of rows of the matrix
+            the second row is the number of cols of the matrix
+            Next, there are rows_count rows (each with cols_count elements), which contain the elements of the matrix
+            
+            Example:
+            A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respectively:
+            3
+            2
+            1 2
+            3 4
+            5 6
     
     Return value:
         error code (an explanatory line is displayed in the console): 

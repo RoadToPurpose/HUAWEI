@@ -23,8 +23,8 @@ the first argument (without taking into account the program name) is the mode of
 - random - if the source data should be generated
         
 if the first argument is file
-- the second argument is the path to the file with matrix A
-- the third argument is the path to the file with matrix B
+- the second argument is the path to the file with matrix A (see heading "File Format")
+- the third argument is the path to the file with matrix B (see heading "File Format")
 - the fourth argument is the number of decimal places when displaying matrices
 
 if the first argument is random
@@ -33,3 +33,17 @@ if the first argument is random
 - the fourth argument is the count of rows in matrix B
 - the fifth argument is the count of cols in matrix B
 - the sixth argument is the number of decimal places when displaying matrices
+
+## File format
+The program uses the following format for input and output files:
+- the first row is the number of rows of the matrix
+- the second row is the number of cols of the matrix
+- Next, there are rows_count rows (each with cols_count elements), which contain the elements of the matrix
+
+### Example:
+A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respectively:
+3
+2
+1 2
+3 4
+5 6
