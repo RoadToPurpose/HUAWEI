@@ -53,7 +53,7 @@ A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respecti
 ### Return value
 Return value is an error code (an description line is displayed in the console): 
 | Error code | Description |
-|:-------:|:--------------------|
+|:-----------:|:---------------------|
 | 0 | success |
 | 1 | non-existent file |
 | 2 | incorrect parameters of the matrix size (for example, if it was indicated that the matrix should have -10 rows) |
