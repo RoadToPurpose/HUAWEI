@@ -19,17 +19,17 @@ To run the program, you need to use the following command (without angle bracket
 
 ## Arguments
 the first argument (without taking into account the program name) is the mode of the program Values:
-            - file - if the source data should be read from files
-            - random - if the source data should be generated
+- file - if the source data should be read from files
+- random - if the source data should be generated
         
-        if the first argument is file
-            - the second argument is the path to the file with matrix A
-            - the third argument is the path to the file with matrix B
-            - the fourth argument is the number of decimal places when displaying matrices
+if the first argument is file
+- the second argument is the path to the file with matrix A
+- the third argument is the path to the file with matrix B
+- the fourth argument is the number of decimal places when displaying matrices
 
-        if the first argument is random
-            - the second argument is the count of rows in matrix A
-            - the third argument is the count of cols in matrix A
-            - the fourth argument is the count of rows in matrix B
-            - the fifth argument is the count of cols in matrix B
-            - the sixth argument is the number of decimal places when displaying matrices
+if the first argument is random
+- the second argument is the count of rows in matrix A
+- the third argument is the count of cols in matrix A
+- the fourth argument is the count of rows in matrix B
+- the fifth argument is the count of cols in matrix B
+- the sixth argument is the number of decimal places when displaying matrices
