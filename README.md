@@ -50,7 +50,7 @@ A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respecti
 5 6
 ```
 
-### Return value
+## Return value
 Return value is an error code (an description line is displayed in the console): 
 | Error code | Description |
 |:-----------:|:---------------------|
@@ -61,3 +61,19 @@ Return value is an error code (an description line is displayed in the console):
 | 4 | incorrect precision value (less than or equal to zero) |
 | 5 | wrong number of arguments |
 | 6 | invalid argument value |
+
+## Results of the program
+The results of the program are output to text files (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format)). If the random mode is specified, then matrix A is output to the file "matrixA.txt", and matrix B is output to the file "matrixB.txt".
+The result of the sequential algorithm is output to the "sequential.txt" file.
+The result of the parallel algorithm is output to the "parallel.txt" file.
+
+## Examples
+Launching the program with reading initial data from files "A.txt" and "B.txt" and with outputting matrices with precision up to three decimal places:
+```
+./main file A.txt B.txt 3
+```
+
+Launching the program with the generation of initial data (matrix A has a size of 5x10, matrix B has a size of 10x3) and with the output of matrices with an accuracy of four decimal places
+```
+./main random 5 10 10 3 4
+```
