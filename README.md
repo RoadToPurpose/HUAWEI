@@ -11,11 +11,15 @@ The program is written in C using OpenMP.
 # Compilation
 The program has been successfully compiled and tested with the gcc v9.3.0 compiler on the Ubuntu 20.04 LTS.
 To compile, you need to use the following command:
+```
 gcc -fopenmp main.c -o main
+```
 
 # Launching
 To run the program, you need to use the following command (without angle brackets):
+```
 ./main argument_list
+```
 
 ## Arguments
 the first argument (without taking into account the program name) is the mode of the program Values:
@@ -67,10 +71,66 @@ The results of the program are output to text files (see [File format](https://g
 The result of the sequential algorithm is output to the "sequential.txt" file.
 The result of the parallel algorithm is output to the "parallel.txt" file.
 
+## Console output
+The program displays the following messages:
+- Time of matrix multiplication in milliseconds for the sequential algorithm
+- File name with the result of the sequential algorithm
+- Time of matrix multiplication in milliseconds for a parallel algorithm
+- The name of the file with the result of the parallel algorithm
+- The result of comparing the results of the algorithms
+If the "random" mode is selected, the program displays messages about where the generated matrices are stored.  
+If an error occurs, the program displays the error text.  
+
 ## Examples
-Launching the program with reading initial data from files "A.txt" and "B.txt" and with outputting matrices with precision up to three decimal places:
+### Example matrices
+In the folder "Examples" there are files "A.txt" and "B.txt".  
+Content of the file "A.txt":
 ```
-./main file A.txt B.txt 3
+4
+3
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+```
+Content of the file "B.txt":
+```
+3
+4
+13 14 15 16
+17 18 19 20
+21 22 23 24
+```
+### With file input
+#### Launching
+Launching the program with reading initial data from files "A.txt" and "B.txt" and with outputting matrices with precision up to three decimal places :
+```
+./main file Examples/B.txt Examples/A.txt 3
+```
+#### Results
+Content of the file "sequential.txt":  
+```
+3
+3
+334.000 392.000 450.000 
+422.000 496.000 570.000 
+510.000 600.000 690.000 
+```
+Content of the file "parallel.txt":  
+```
+3
+3
+334.000 392.000 450.000 
+422.000 496.000 570.000 
+510.000 600.000 690.000 
+```
+#### Console output:
+```
+[SEQUENTIAL] Multiplication time in milliseconds: 0
+[SEQUENTIAL] Result is written to a file: sequential.txt
+[PARALLEL] Multiplication time in milliseconds: 19
+[PARALLEL] Result is written to a file: parallel.txt
+The results of the functions are equal
 ```
 
 Launching the program with the generation of initial data (matrix A has a size of 5x10, matrix B has a size of 10x3) and with the output of matrices with an accuracy of four decimal places
