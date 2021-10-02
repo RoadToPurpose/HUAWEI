@@ -1,9 +1,16 @@
 # Content
-- [Description](https://github.com/RoadToPurpose/HUAWEI#description))
-- [Task](https://github.com/RoadToPurpose/HUAWEI#task))
-- [About the program](https://github.com/RoadToPurpose/HUAWEI#about-the-program))
-- [Compilation](https://github.com/RoadToPurpose/HUAWEI#compilation))
-- [Launching](https://github.com/RoadToPurpose/HUAWEI#launching))
+- [Description](https://github.com/RoadToPurpose/HUAWEI#description)
+- [Task](https://github.com/RoadToPurpose/HUAWEI#task)
+- [About the program](https://github.com/RoadToPurpose/HUAWEI#about-the-program)
+- [Compilation](https://github.com/RoadToPurpose/HUAWEI#compilation)
+- [Launching](https://github.com/RoadToPurpose/HUAWEI#launching)
+    - [Arguments](https://github.com/RoadToPurpose/HUAWEI#arguments)
+    - [File format](https://github.com/RoadToPurpose/HUAWEI#file-format)
+        - [Example](https://github.com/RoadToPurpose/HUAWEI#arguments)
+    - [Return value](https://github.com/RoadToPurpose/HUAWEI#return-value)
+    - [Results of the program](https://github.com/RoadToPurpose/HUAWEI#results-of-the-program)
+    - [Console output](https://github.com/RoadToPurpose/HUAWEI#console-output)
+    - [Examples](https://github.com/RoadToPurpose/HUAWEI#examples)
 
 # Description
 Test task for the competition from HUAWEI.
