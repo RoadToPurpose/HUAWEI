@@ -5,12 +5,14 @@
 - [Compilation](https://github.com/RoadToPurpose/HUAWEI#compilation)
 - [Launching](https://github.com/RoadToPurpose/HUAWEI#launching)
     - [Arguments](https://github.com/RoadToPurpose/HUAWEI#arguments)
-    - [File format](https://github.com/RoadToPurpose/HUAWEI#file-format)
+    - [File format](https://github.com/RoadToPurpose/HUAWEI#example)
         - [Example](https://github.com/RoadToPurpose/HUAWEI#arguments)
     - [Return value](https://github.com/RoadToPurpose/HUAWEI#return-value)
     - [Results of the program](https://github.com/RoadToPurpose/HUAWEI#results-of-the-program)
     - [Console output](https://github.com/RoadToPurpose/HUAWEI#console-output)
     - [Examples](https://github.com/RoadToPurpose/HUAWEI#examples)
+        - [File input](https://github.com/RoadToPurpose/HUAWEI#file-input)
+        - [Random input](https://github.com/RoadToPurpose/HUAWEI#random-input)
 
 # Description
 Test task for the competition from HUAWEI.
@@ -96,7 +98,8 @@ The program displays the following messages:
 - The result of comparing the results of the algorithms  
 
 ## Examples
-### Example matrices
+### File input
+#### Example matrices
 In the folder "Examples" there are files "A.txt" and "B.txt".  
 Content of the file "A.txt":
 ```
@@ -115,7 +118,6 @@ Content of the file "B.txt":
 17 18 19 20
 21 22 23 24
 ```
-### File input
 #### Launching
 Launching the program with reading initial data from files "A.txt" and "B.txt" and with outputting matrices with precision up to three decimal places :
 ```
