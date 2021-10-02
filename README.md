@@ -1,3 +1,10 @@
+# Content
+- [Description](https://github.com/RoadToPurpose/HUAWEI#description))
+- [Task](https://github.com/RoadToPurpose/HUAWEI#task))
+- [About the program](https://github.com/RoadToPurpose/HUAWEI#about-the-program))
+- [Compilation](https://github.com/RoadToPurpose/HUAWEI#compilation))
+- [Launching](https://github.com/RoadToPurpose/HUAWEI#launching))
+
 # Description
 Test task for the competition from HUAWEI.
 
@@ -27,8 +34,8 @@ the first argument (without taking into account the program name) is the mode of
 - random - if the source data should be generated
         
 if the first argument is file
-- the second argument is the path to the file with matrix A (see [File format](##File format)
-- the third argument is the path to the file with matrix B (see [File format](##File format))
+- the second argument is the path to the file with matrix A (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format))
+- the third argument is the path to the file with matrix B (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format))
 - the fourth argument is the number of decimal places when displaying matrices
 
 if the first argument is random
@@ -67,7 +74,7 @@ Return value is an error code (an description line is displayed in the console):
 | 6 | invalid argument value |
 
 ## Results of the program
-The results of the program are output to text files (see [File format](#File format). If the random mode is specified, then matrix A is output to the file "matrixA.txt", and matrix B is output to the file "matrixB.txt".
+The results of the program are output to text files (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format)). If the random mode is specified, then matrix A is output to the file "matrixA.txt", and matrix B is output to the file "matrixB.txt".
 The result of the sequential algorithm is output to the "sequential.txt" file.
 The result of the parallel algorithm is output to the "parallel.txt" file.
 
