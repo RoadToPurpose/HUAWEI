@@ -49,3 +49,15 @@ A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respecti
 3 4
 5 6
 ```
+
+### Return value
+Return value is an error code (an description line is displayed in the console): 
+| Error code | Description |
+|:-------:|:--------------------|
+| 0 | success |
+| 1 | non-existent file |
+| 2 | incorrect parameters of the matrix size (for example, if it was indicated that the matrix should have -10 rows) |
+| 3 | if matrices do not match in size |
+| 4 | incorrect precision value (less than or equal to zero) |
+| 5 | wrong number of arguments |
+| 6 | invalid argument value |
