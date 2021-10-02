@@ -101,7 +101,7 @@ Content of the file "B.txt":
 17 18 19 20
 21 22 23 24
 ```
-### With file input
+### File input
 #### Launching
 Launching the program with reading initial data from files "A.txt" and "B.txt" and with outputting matrices with precision up to three decimal places :
 ```
@@ -133,7 +133,54 @@ Content of the file "parallel.txt":
 The results of the functions are equal
 ```
 
-Launching the program with the generation of initial data (matrix A has a size of 5x10, matrix B has a size of 10x3) and with the output of matrices with an accuracy of four decimal places
+### Random input
+Launching the program with the generation of initial data (matrix A has a size of 4x2, matrix B has a size of 2x3) and with the output of matrices with an accuracy of one decimal places:
 ```
-./main random 5 10 10 3 4
+./main random 4 2 2 3 1
+```
+#### Results
+Content of the file "matrixA.txt":  
+```
+4
+2
+-82.0 36.0 
+61.0 -96.0 
+0.0 15.0 
+-16.0 19.0 
+```
+Content of the file "matrixB.txt":  
+```
+2
+3
+-11.0 -64.0 9.0 
+-2.0 81.0 -7.0 
+```
+Content of the file "sequential.txt":  
+```
+4
+3
+830.0 8164.0 -990.0 
+-479.0 -11680.0 1221.0 
+-30.0 1215.0 -105.0 
+138.0 2563.0 -277.0 
+```
+Content of the file "parallel.txt":  
+```
+4
+3
+830.0 8164.0 -990.0 
+-479.0 -11680.0 1221.0 
+-30.0 1215.0 -105.0 
+138.0 2563.0 -277.0 
+```
+
+#### Console output:
+```
+Matrix A is written to a file: matrixA.txt
+Matrix B is written to a file: matrixB.txt
+[SEQUENTIAL] Multiplication time in milliseconds: 0
+[SEQUENTIAL] Result is written to a file: sequential.txt
+[PARALLEL] Multiplication time in milliseconds: 4
+[PARALLEL] Result is written to a file: parallel.txt
+The results of the functions are equal
 ```
