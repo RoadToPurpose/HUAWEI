@@ -42,8 +42,8 @@ The program uses the following format for input and output files:
 
 ### Example:
 A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respectively:
-3
-2
-1 2
-3 4
-5 6
+    3
+    2
+    1 2
+    3 4
+    5 6
