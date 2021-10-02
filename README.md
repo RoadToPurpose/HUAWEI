@@ -23,8 +23,8 @@ the first argument (without taking into account the program name) is the mode of
 - random - if the source data should be generated
         
 if the first argument is file
-- the second argument is the path to the file with matrix A (see heading "File Format")
-- the third argument is the path to the file with matrix B (see heading "File Format")
+- the second argument is the path to the file with matrix A (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format))
+- the third argument is the path to the file with matrix B (see [File format](https://github.com/RoadToPurpose/HUAWEI#File-format))
 - the fourth argument is the number of decimal places when displaying matrices
 
 if the first argument is random
@@ -42,8 +42,10 @@ The program uses the following format for input and output files:
 
 ### Example:
 A matrix that contains 3 rows and 2 columns, with elements 1 2 3 4 5 6, respectively:
-    3
-    2
-    1 2
-    3 4
-    5 6
+```
+3
+2
+1 2
+3 4
+5 6
+```
