@@ -67,7 +67,7 @@ Return value is an error code (an description line is displayed in the console):
 | 6 | invalid argument value |
 
 ## Results of the program
-The results of the program are output to text files (see [File format](##File format). If the random mode is specified, then matrix A is output to the file "matrixA.txt", and matrix B is output to the file "matrixB.txt".
+The results of the program are output to text files (see [File format](#File format). If the random mode is specified, then matrix A is output to the file "matrixA.txt", and matrix B is output to the file "matrixB.txt".
 The result of the sequential algorithm is output to the "sequential.txt" file.
 The result of the parallel algorithm is output to the "parallel.txt" file.
 
