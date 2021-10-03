@@ -5,8 +5,6 @@
 int main(int argc, char *argv[])
 {
 
-    printf("%d");
-
     ErrorType errorCode = SUCCESS;
     struct Matrix matrixA;
     struct Matrix matrixB;

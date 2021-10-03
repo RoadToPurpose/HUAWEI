@@ -222,5 +222,5 @@ To compare sequential and parallel versions of multiplication, random square mat
 | 10 | 0 | 0 |
 | 100 | 6 | 14 |
 | 1000 | 9237 | 3497 |
-| 2000 | 106315 | 31415 |
+| 2000 | 106315 | 31415 |  
 As you can see, on large matrices (N> = 1000) a parallel program runs faster than a sequential one.
