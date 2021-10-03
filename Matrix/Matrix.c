@@ -1,7 +1,6 @@
 
 #include "Matrix.h"
 
-
 // getting the running time of the program in milliseconds
 long long int mtime()
 {
@@ -15,7 +14,7 @@ void freeMatrix(struct Matrix matrix)
 {
 
     MatrixDimensions i;
-    #pragma omp parallel for default(none) shared(matrix) private(i)
+#pragma omp parallel for default(none) shared(matrix) private(i)
     for (i = 0; i < matrix.rowsCount; i++)
     {
         free(matrix.matrix[i]);

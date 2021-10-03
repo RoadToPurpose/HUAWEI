@@ -1,10 +1,3 @@
-# TODO:
-Написать пояснение по работе программы:
-Предоставить программу и тест к ней в виде исходного кода. Предоставить
-краткое описание способа их использования, применённые подходы к
-ускорению и мотивацию по выбору этих подходов к ускорению. Решение
-более чем одной задачи будет плюсом.
-
 # Content
 - [Description](https://github.com/RoadToPurpose/HUAWEI#description)
 - [Task](https://github.com/RoadToPurpose/HUAWEI#task)
@@ -17,9 +10,12 @@
     - [Return value](https://github.com/RoadToPurpose/HUAWEI#return-value)
     - [Results of the program](https://github.com/RoadToPurpose/HUAWEI#results-of-the-program)
     - [Console output](https://github.com/RoadToPurpose/HUAWEI#console-output)
+    - [Shell script](https://github.com/RoadToPurpose/HUAWEI#shell-script)
     - [Examples](https://github.com/RoadToPurpose/HUAWEI#examples)
         - [File input](https://github.com/RoadToPurpose/HUAWEI#file-input)
         - [Random input](https://github.com/RoadToPurpose/HUAWEI#random-input)
+- [Explanation of the program](https://github.com/RoadToPurpose/HUAWEI#explanation-of-the-program)
+- [Tests](https://github.com/RoadToPurpose/HUAWEI#tests)
 
 # Description
 Test task for the competition from HUAWEI.
@@ -103,6 +99,9 @@ The program displays the following messages:
 - Time of matrix multiplication in milliseconds for a parallel algorithm
 - The name of the file with the result of the parallel algorithm
 - The result of comparing the results of the algorithms  
+
+## Shell script
+The "Create.sh" file contains bash code that automatically compiles the program and runs it with the arguments passed to the script.
 
 ## Examples
 ### File input
@@ -208,3 +207,20 @@ Matrix B is written to a file: matrixB.txt
 The results of the functions are equal
 ```
 
+# Explanation of the program
+Parallelization directives are used in the program in the following functions:
+- freeMatrix () - each thread deletes its matrix row when clearing memory
+- matrixMultiplicationParallel () - each thread performs calculations for the corresponding row of the result matrix
+- generateRandomMatrix () - each thread generates random numbers for the corresponding row of the matrix
+- compareMatrices () - each thread compares one row of matrix A with the corresponding row of matrix B, the comparison results from all threads are collected into one variable using the reduce directive with operation &&
+Parallelization directives cannot be used in I/O functions, since all threads work with the same shared resource (thread).
+
+# Tests
+To compare sequential and parallel versions of multiplication, random square matrices of size NxN were used:
+| N | Sequential time (ms) | Parallel time (ms) |
+|:------:|:------:|:------:|
+| 10 | 0 | 0 |
+| 100 | 6 | 14 |
+| 1000 | 9237 | 3497 |
+| 2000 | 106315 | 31415 |
+As you can see, on large matrices (N> = 1000) a parallel program runs faster than a sequential one.
