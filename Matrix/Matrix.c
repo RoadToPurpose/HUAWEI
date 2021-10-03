@@ -1,14 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/time.h>
-#include <omp.h>
-#include "Errors.c"
 
-#define MatrixType float
-#define MatrixDimensions unsigned long long int
-#define PrecisionType unsigned int
-#define TOP_RANDOM 100
-#define BOT_RANDOM -100
+#include "Matrix.h"
+
 
 // getting the running time of the program in milliseconds
 long long int mtime()
@@ -19,19 +11,11 @@ long long int mtime()
     return (long long int)t.tv_sec * 1000 + t.tv_usec / 1000;
 }
 
-struct Matrix
-{
-    MatrixDimensions rowsCount;
-    MatrixDimensions colsCount;
-
-    MatrixType **matrix;
-};
-
 void freeMatrix(struct Matrix matrix)
 {
 
     MatrixDimensions i;
-#pragma omp parallel for default(none) shared(matrix) private(i)
+    #pragma omp parallel for default(none) shared(matrix) private(i)
     for (i = 0; i < matrix.rowsCount; i++)
     {
         free(matrix.matrix[i]);

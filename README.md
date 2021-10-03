@@ -35,7 +35,7 @@ The program is written in C using OpenMP.
 The program has been successfully compiled and tested with the gcc v9.3.0 compiler on the Ubuntu 20.04 LTS.
 To compile, you need to use the following command:
 ```
-gcc -fopenmp main.c -o main
+gcc -fopenmp main.c Matrix/Matrix.h Matrix/Matrix.c Errors/Errors.h Errors/Errors.c -o main
 ```
 
 # Launching
@@ -108,7 +108,7 @@ The program displays the following messages:
 ### File input
 #### Example matrices
 In the folder "Examples" there are files "A.txt" and "B.txt".  
-Content of the file "A.txt":
+Content of the file "Examples/A.txt":
 ```
 4
 3
@@ -117,7 +117,7 @@ Content of the file "A.txt":
 7 8 9
 10 11 12
 ```
-Content of the file "B.txt":
+Content of the file "Examples/B.txt":
 ```
 3
 4
